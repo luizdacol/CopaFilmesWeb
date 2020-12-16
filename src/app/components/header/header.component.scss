@@ -1,0 +1,29 @@
+.background{
+    background-color: #565656;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .separator{
+        width: 30px;
+        height: 2px;
+        display: block;
+        margin: 0 auto 20px auto;
+        background-color: darkgray;
+    }
+}
+
+h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.titulo{
+    color: darkgray;
+}
+
+.descricao{
+    color: #fff;
+    width: 600px;
+}
