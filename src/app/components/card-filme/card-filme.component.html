@@ -1,0 +1,9 @@
+<div class="card-filme my-1">
+    <div class="check">
+        <input type="checkbox" [id]="filme.id" (change)="notify.emit($event)">
+    </div>
+    <div class="descricao">
+        <span class="titulo">{{filme.titulo}}</span>
+        <span class="ano">{{filme.ano}}</span>
+    </div>
+</div>

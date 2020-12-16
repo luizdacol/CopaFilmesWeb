@@ -1,0 +1,47 @@
+
+.card-filme{
+    background-color: white;
+    display: flex;
+    height: 70px;
+
+    .check{
+        width: 55px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        input{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .descricao{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        span{
+            display: block;
+            width: 100%;
+
+            &.titulo{
+                font-weight: bold;                
+                font-size: 12px;
+            }
+
+            &.ano{
+                font-size: 10px;
+                color: #9f9f9f
+            }
+        }
+
+        
+    }
+    
+}
+
+
