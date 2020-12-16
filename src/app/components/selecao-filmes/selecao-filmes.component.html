@@ -1,0 +1,19 @@
+<app-header [titulo]="this.titulo" [descricao]="this.descricao"></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <span class="contador">Selecionados<br>{{this.filmesSelecionados.length}} de 8 filmes</span>
+        </div>
+        <div class="col">
+            <button class="float-right botao" [disabled]="!habilitarBotao()" (click)="enviarFilmesSelecionados()">GERAR MEU
+                CAMPEONATO</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <app-card-filme class="col-3 px-1" *ngFor="let filme of filmes" [filme]="filme" (notify)="alteraSelecao($event)"></app-card-filme>
+    </div>
+</div>

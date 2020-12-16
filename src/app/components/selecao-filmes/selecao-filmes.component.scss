@@ -1,0 +1,22 @@
+.contador{
+    color: white;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.botao{
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    background-color: black;
+
+    &:disabled{
+        opacity: 0.65; 
+        cursor: not-allowed;
+    }
+}
