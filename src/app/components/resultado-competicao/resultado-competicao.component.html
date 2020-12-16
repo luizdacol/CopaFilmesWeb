@@ -1,0 +1,14 @@
+<app-header [titulo]="this.titulo" [descricao]="this.descricao"></app-header>
+
+<div class="container lista-finalista">
+    <div class="finalista my-3"><span>1º</span> {{this.finalista.campeao}}</div>
+    <div class="finalista my-3"><span>2º</span> {{this.finalista.viceCampeao}}</div>
+
+    <!-- <nav class="float-right">
+        <a routerLink="/selecao-filmes">
+            Iniciar Novo Campeonato
+        </a>
+    </nav> -->
+
+    <button class="float-right botao" routerLink="/selecao-filmes">Iniciar Novo Campeonato</button>
+</div>

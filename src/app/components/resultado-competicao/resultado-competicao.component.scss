@@ -1,0 +1,37 @@
+.lista-finalista{
+    padding: 0;
+
+    .finalista{
+        height: 80px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+
+        span{
+            background-color:#565656;
+            height: 100%;
+            width: 75px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 40px;
+            color: white;
+            margin-right: 20px;
+        }
+
+    }
+
+    .botao{
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 250px;
+        background-color: black;
+    }
+}
+
+
