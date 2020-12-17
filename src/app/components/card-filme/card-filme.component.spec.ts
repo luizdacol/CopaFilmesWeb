@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Filme } from 'src/app/interfaces/filme';
 
 import { CardFilmeComponent } from './card-filme.component';
 
@@ -16,6 +17,7 @@ describe('CardFilmeComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CardFilmeComponent);
     component = fixture.componentInstance;
+    component.filme = {id: "1", titulo: "Titulo do filme", ano: 2000};
     fixture.detectChanges();
   });
 

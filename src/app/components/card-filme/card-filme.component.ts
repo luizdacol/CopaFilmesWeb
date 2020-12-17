@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Filme } from 'src/app/interfaces/filme';
 
 @Component({
   selector: 'app-card-filme',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CardFilmeComponent implements OnInit {
 
-  @Input() filme;
+  @Input() filme: Filme;
   @Output() notify =  new EventEmitter();
 
   constructor() { }
