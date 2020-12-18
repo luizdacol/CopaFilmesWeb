@@ -9,11 +9,14 @@ import { Filme } from 'src/app/interfaces/filme';
 export class CardFilmeComponent implements OnInit {
 
   @Input() filme: Filme;
-  @Output() notify =  new EventEmitter();
+  @Output() notify = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+    if (this.filme === undefined) {
+      this.filme = { id: '-', titulo: '-', ano: 0 };
+    }
   }
 
 }

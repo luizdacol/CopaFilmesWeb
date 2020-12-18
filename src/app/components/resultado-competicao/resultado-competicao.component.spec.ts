@@ -24,7 +24,10 @@ describe('ResultadoCompeticaoComponent', () => {
       extras: {
         state: { campeao: "Campeao", viceCampeao: "Vice Campeao" }
       }
-    } as any)
+    } as any);
+
+    spyOn(router, 'navigate');
+
   }));
 
   beforeEach(() => {
@@ -36,4 +39,19 @@ describe('ResultadoCompeticaoComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should finalistas info appears', () => {
+    let elemento = fixture.debugElement.nativeElement;
+    expect(elemento.querySelectorAll('.finalista')[0].textContent).toEqual('1º Campeao');
+    expect(elemento.querySelectorAll('.finalista')[1].textContent).toEqual('2º Vice Campeao');
+  })
+
+  it('should navigate to selecao-filmes page', () => {
+
+    let botao = fixture.debugElement.nativeElement.querySelector('.botao');
+    botao.click();
+
+    expect(router.navigate).toHaveBeenCalledWith(["/selecao-filmes"]);
+  });
+
 });

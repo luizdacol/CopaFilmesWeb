@@ -14,10 +14,15 @@ export class ResultadoCompeticaoComponent implements OnInit {
   descricao: string = "Veja o resultado final do Campeonato de filmes de forma simples e rápida";
 
   constructor(private router: Router) {
-    this.finalista = this.router.getCurrentNavigation().extras.state as Finalistas;
   }
 
   ngOnInit(): void {
+    this.finalista = this.router.getCurrentNavigation().extras.state as Finalistas;
+
+  }
+
+  iniciarCampeonato(): void {
+    this.router.navigate(['/selecao-filmes']);
   }
 
 }
