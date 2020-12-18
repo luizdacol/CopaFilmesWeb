@@ -3,14 +3,14 @@ Este projeto foi desenvolvido com Angular versão 9.1.7
 Para executar a aplicação, execute o comando abaixo no diretorio raiz do projeto
 
     1. npm install
-    2. ng serve
+    2. npm start
 
     A aplicação subirá no endereço http://localhost:4200 
 
 
 Para executar os testes, execute o comando abaixo no diretorio raiz do projeto
 
-    1. ng test
+    1. npm test
 
 
 
